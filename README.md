@@ -4,9 +4,6 @@ https://github.com/GitHub-jian2022/vue-chat-admin
 #### 启动项目
 1. npm i 安装依赖
 1. npm run serve 启动项目
-1. cd server  (接口目录)
-1. npm i 
-1. npm run dev
 
 >#### 核心知识体系简介
 1. vue-cli3 脚手架
@@ -35,7 +32,7 @@ https://github.com/GitHub-jian2022/vue-chat-admin
     
 6. promise 使用
     
-    * 在项目中使用 async await 把异步变成同步，编写和阅读更舒服
+    * 在项目中使用 async await 把异步变成同步
     
 7. 有赞 vant-ui 库
     * 导航栏
@@ -56,16 +53,6 @@ https://github.com/GitHub-jian2022/vue-chat-admin
   * 根目录新建两文件 .env.development => 开发环境配置  .env.production => 生产环境配置
 文件内容
 
-```
-// .env.development
-VUE_APP_URL="https://www.easy-mock.com/mock/5cd62747d3a84206275d58d1/huruqing/api"
-```
-
-```
-// .env.production
-VUE_APP_URL="https://www.easy-mock.com/mock/5cd62747d3a84206275d58d1/huruqing/api"
-```
-
 3. **package.json 配置**
 vue-cli3默认已经给你配置好了model, 开发环境对应development, 生产环境对应production,如果你不知道model,请移步[webpack文档官网]([https://www.webpackjs.com/](https://www.webpackjs.com/)
 )
@@ -78,15 +65,11 @@ vue-cli3默认已经给你配置好了model, 开发环境对应development, 生�
     * 设置登录状态
     * 设置用户名
     * 保存 token
+    * 会话列表
+    * 聊天室
 2. 以登录为里，做个简单说明
-![](https://upload-images.jianshu.io/upload_images/7177443-825e2e816a49413b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 登录成功时，修改登陆状态为 true
-![image.png](https://upload-images.jianshu.io/upload_images/7177443-906c4cc3e5713830.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 退出登录时，修改登录状态为 false
-![](https://upload-images.jianshu.io/upload_images/7177443-1da2a2e9208c1872.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-4. 获取 store 中 state 设置的变量通过 mapGetters, 看图
-![](https://upload-images.jianshu.io/upload_images/7177443-61be719b7d9c8a43.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![在模板中使用](https://upload-images.jianshu.io/upload_images/7177443-8b2c372f88a0f59e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 3. vuex 持久化
     * 使用 vuex-persistedstate 插件对 vuex 的状态持久化
